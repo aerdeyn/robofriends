@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cr",
+				"createThunkMiddleware"
+			],
+			[
+				"is",
+				"isPending"
+			],
+			[
+				"on",
+				"onRequestRobots"
+			],
+			[
+				"root",
+				"rootReducer"
+			],
+			[
+				"re",
+				"requestRobots"
+			],
+			[
+				"RE",
+				"REQUEST_ROBOTS_PENDING"
+			],
+			[
+				"reg",
+				"handleRegister"
+			],
+			[
+				"b",
+				"bcrypt"
+			],
+			[
+				"signi",
+				"signInEmail"
+			],
+			[
+				"right",
+				"rightCol"
+			],
+			[
+				"clarifai",
+				"clarifaiFace"
+			],
+			[
+				"pa",
+				"particles"
+			],
+			[
+				"particles",
+				"particlesOptions"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Add Channel"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/My Documents/Dev/robofriends",
+		"/D/My Documents/Dev/robofriends/public",
+		"/D/My Documents/Dev/robofriends/src",
+		"/D/My Documents/Dev/robofriends/src/components",
+		"/D/My Documents/Dev/robofriends/src/containers"
+	],
+	"file_history":
+	[
+		"/D/My Documents/Dev/robofriends/src/components/CounterButton.js",
+		"/D/My Documents/Dev/robofriends/src/components/Header.js",
+		"/D/My Documents/Dev/robofriends/src/containers/App.js",
+		"/D/My Documents/Dev/robofriends/src/index.js",
+		"/D/My Documents/Dev/smart-brain-api/server.js",
+		"/D/My Documents/Dev/webpack-project/src/index.js",
+		"/D/My Documents/Dev/webpack-project/.eslintrc",
+		"/D/My Documents/Dev/webpack-project/webpack.config.js",
+		"/D/My Documents/Dev/webpack-project/dist/index.html",
+		"/D/My Documents/Dev/webpack-project/package.json",
+		"/D/My Documents/Dev/webpack-project/index.html",
+		"/D/My Documents/Dev/robofriends/src/constants.js",
+		"/D/My Documents/Dev/robofriends/src/reducers.js",
+		"/D/My Documents/Dev/robofriends/src/actions.js",
+		"/D/My Documents/Dev/robofriends/src/ErrorBoundary.js",
+		"/D/My Documents/Dev/robofriends/node_modules/redux-thunk/src/index.js",
+		"/D/My Documents/Dev/robofriends/src/App.js",
+		"/D/My Documents/Dev/robofriends/src/errorBoundary.js",
+		"/D/My Documents/Dev/CSS-Grid-2/index.html",
+		"/D/My Documents/Dev/CSS-Grid-2/style.css",
+		"/C/Users/Chris/AppData/Local/Temp/Temp1_project-prettify.zip/project-prettify/style.css",
+		"/D/My Documents/Dev/CSS-Grid/style.css",
+		"/D/My Documents/Dev/CSS-Grid/index.html",
+		"/D/My Documents/Dev/smart-brain-api/controllers/register.js",
+		"/D/My Documents/Dev/smart-brain-api/controllers/image.js",
+		"/D/My Documents/Dev/smart-brain-api/package.json",
+		"/D/My Documents/Dev/facerecognitionbrain/.env",
+		"/D/My Documents/Dev/smart-brain-api/.env",
+		"/D/My Documents/Dev/smart-brain-api/package-old.json",
+		"/D/My Documents/Dev/smart-brain-api/server_15Dec2018.js",
+		"/D/My Documents/Dev/smart-brain-api/node_modules/pg-pool/index.js",
+		"/D/My Documents/Dev/smart-brain-api/server_old.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/ImageLinkForm/ImageLinkForm.css",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/ImageLinkForm/ImageLinkForm.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/Signin/Signin.css",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/Navigation/Navigation.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/Register/Register.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/Signin/Signin.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/index.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/FaceRecognition/FaceRecognition.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/App.css",
+		"/D/My Documents/Dev/facerecognitionbrain/src/App.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/FaceRecognition/FaceRecognition.css",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/Logo/Logo.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/Rank/Rank.js",
+		"/D/My Documents/Dev/facerecognitionbrain/src/index.css",
+		"/D/My Documents/Dev/facerecognitionbrain/src/serviceWorker.js",
+		"/D/My Documents/Dev/robofriends/src/App.css",
+		"/D/My Documents/Dev/facerecognitionbrain/src/components/Logo/Logo.css",
+		"/D/My Documents/Dev/exercisePromises.js",
+		"/D/My Documents/Dev/promise.js",
+		"/D/My Documents/Dev/robofriends/src/robots.js",
+		"/D/My Documents/Dev/robofriends/src/Card.js",
+		"/D/My Documents/Dev/robofriends/src/CardList.js",
+		"/D/My Documents/Dev/robofriends/src/SearchBox.js",
+		"/D/My Documents/Dev/robofriends/src/Scroll.js",
+		"/D/My Documents/Dev/robofriends/public/index.html",
+		"/D/My Documents/Dev/robofriends/src/index.css",
+		"/D/My Documents/Dev/style.css",
+		"/D/My Documents/Dev/robofriends/src/app.css",
+		"/D/My Documents/Dev/index.html",
+		"/D/My Documents/Dev/robofriends/package.json",
+		"/D/My Documents/Dev/robofriends/src/Hello.css",
+		"/D/My Documents/Dev/robofriends/src/Hello.js",
+		"/D/My Documents/Dev/DOM/index.html",
+		"/D/My Documents/Dev/exercise6.js",
+		"/D/My Documents/Dev/exercise5.js",
+		"/D/My Documents/Dev/DOM/script.js",
+		"/D/My Documents/Dev/DOM/style.css",
+		"/D/My Documents/Dev/package.json",
+		"/D/My Documents/Dev/login.html",
+		"/D/My Documents/Dev/about.html",
+		"/D/My Documents/Dev/script2.js",
+		"/D/My Documents/Dev/script.js"
+	],
+	"find":
+	{
+		"height": 40.8
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "robofriends.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
