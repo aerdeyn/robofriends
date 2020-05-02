@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/robofriends/static/js/2.df1d7114.chunk.js"
   },
   {
-    "revision": "b60a703195f64e4abce4a208677d54e3",
+    "revision": "0abb51db2df4b3f230ec1bb87143af5a",
     "url": "/robofriends/index.html"
   }
 ];
