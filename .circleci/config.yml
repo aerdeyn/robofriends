@@ -2,28 +2,38 @@ version: 2.1
 #orbs:
 #  node: circleci/node@1.1
 jobs:
-  bobby:
+  build:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/node:11.1
 #    executor:
 #      name: node/default
 #      tag: '10.4'
     steps:
       - checkout
-      - run: echo "Bobby first try!"
-#      - node/with-cache:
-#          steps:
-#            - run: npm install
-#      - run: npm run test
-  sally:
+      - run: echo "npm install"
+      - run: npm install
+      - run: CI=true npm run build
+  test:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/node:11.1
     steps:
       - checkout
-      - run: echo "Sally first try!"
+      - run: echo "testing"
+      - run: npm install
+      - run: CI=true npm test
+  hithere:
+    docker:
+      - image: circleci/node:11.1
+    steps:
+      - checkout
+      - run: echo "hello!"
 workflows:
   version: 2.1
-  bobby_sally:
+  build_test_lint:
     jobs:
-      - bobby
-      - sally
+      - build
+      - hi there
+      - test:
+        requires:
+          - hi there
+# hi there must have passed
