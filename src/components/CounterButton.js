@@ -18,7 +18,6 @@ class CounterButton extends Component {
 	}
 
 	updateCount = () => {
-		console.log(this.state.count);
 		// done this way to avoid issues with asynchronous behaviour
 		this.setState(state => {
 			return {count: state.count + 1}
@@ -27,7 +26,10 @@ class CounterButton extends Component {
 
 	render () {
 		return (
-			<button color={this.props.color} onClick={this.updateCount}>
+			<button
+				id = 'counter'
+				color={this.props.color}
+				onClick={this.updateCount}>
 				Click Count: {this.state.count}
 			</button>
 		);

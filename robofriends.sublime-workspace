@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"reque",
+				"requestRobots"
+			],
+			[
+				"REQU",
+				"REQUEST_ROBOTS_PENDING"
+			],
+			[
+				"ins",
+				"initialStateRobots"
+			],
+			[
 				"cr",
 				"createThunkMiddleware"
 			],
@@ -59,6 +71,44 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "import {\n\tCHANGE_SEARCH_FIELD,\n\tREQUEST_ROBOTS_PENDING,\n\tREQUEST_ROBOTS_SUCCESS,\n\tREQUEST_ROBOTS_FAILED\n} from './constants.js';\n\nimport * as actions from \"./actions\";\n\nimport configureMockStore from 'redux-mock-store';\nimport thunkMiddleware from 'redux-thunk';\n\nconst mockStore = configureMockStore([thunkMiddleware]);\n\nit('should create an action to search robots', () => {\n\t\n\tconst text = 'wooo';\n\tconst expectedAction = {\n\t\ttype: CHANGE_SEARCH_FIELD,\n\t\tpayload: text\n\t}\n\n\texpect(actions.setSearchField(text)).toEqual(expectedAction);\n})\n\nit('handles the API request', () => {\n\tconst store = mockStore();\n\tstore.dispatch(actions.requestRobots());\n\tconst action = store.getActions();\n\tconsole.log('action', action)\n\tconst expectedAction = {\n\t\ttype: REQUEST_ROBOTS_PENDING,\n\t}\n\n\texpect(action[0]).toEqual(expectedAction);\n})\n\n",
+			"file": "src/actions.test.js",
+			"file_size": 847,
+			"file_write_time": 132376290932595000,
+			"settings":
+			{
+				"buffer_size": 828,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/containers/App.js",
+			"settings":
+			{
+				"buffer_size": 979,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/reducers.test.js",
+			"settings":
+			{
+				"buffer_size": 1808,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/actions.js",
+			"settings":
+			{
+				"buffer_size": 742,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -104,15 +154,33 @@
 		"/D/My Documents/Dev/robofriends",
 		"/D/My Documents/Dev/robofriends/public",
 		"/D/My Documents/Dev/robofriends/src",
-		"/D/My Documents/Dev/robofriends/src/components",
 		"/D/My Documents/Dev/robofriends/src/containers"
 	],
 	"file_history":
 	[
-		"/D/My Documents/Dev/robofriends/src/components/CounterButton.js",
-		"/D/My Documents/Dev/robofriends/src/components/Header.js",
-		"/D/My Documents/Dev/robofriends/src/containers/App.js",
+		"/D/My Documents/Dev/robofriends/src/reducers.test.js",
+		"/D/My Documents/Dev/robofriends/src/actions.js",
+		"/D/My Documents/Dev/robofriends/src/components/MainPage.test.js",
+		"/D/My Documents/Dev/robofriends/src/reducers.js",
+		"/D/My Documents/Dev/robofriends/src/actions.test.js",
+		"/D/My Documents/Dev/robofriends/src/components/MainPage.js",
 		"/D/My Documents/Dev/robofriends/src/index.js",
+		"/D/My Documents/Dev/robofriends/src/containers/App.js",
+		"/D/My Documents/Dev/robofriends/src/components/CardList.js",
+		"/D/My Documents/Dev/robofriends/src/components/CounterButton.js",
+		"/D/My Documents/Dev/robofriends/src/components/Card.js",
+		"/D/My Documents/Dev/robofriends/src/containers/MainPage.test.js",
+		"/D/My Documents/Dev/robofriends/src/containers/App.css",
+		"/D/My Documents/Dev/robofriends/src/components/MainPage.css",
+		"/D/My Documents/Dev/robofriends/setupTests.js",
+		"/D/My Documents/Dev/robofriends/src/components/CardList.test.js",
+		"/D/My Documents/Dev/robofriends/src/components/CounterButton.test.js",
+		"/D/My Documents/Dev/robofriends/src/containers/App.test.js",
+		"/D/My Documents/Dev/robofriends/src/components/Card.test.js",
+		"/D/My Documents/Dev/robofriends/src/components/Header.js",
+		"/D/My Documents/Dev/robofriends/public/index.html",
+		"/D/My Documents/Dev/robofriends/package.json",
+		"/D/My Documents/Dev/robofriends/public/manifest.json",
 		"/D/My Documents/Dev/smart-brain-api/server.js",
 		"/D/My Documents/Dev/webpack-project/src/index.js",
 		"/D/My Documents/Dev/webpack-project/.eslintrc",
@@ -121,8 +189,6 @@
 		"/D/My Documents/Dev/webpack-project/package.json",
 		"/D/My Documents/Dev/webpack-project/index.html",
 		"/D/My Documents/Dev/robofriends/src/constants.js",
-		"/D/My Documents/Dev/robofriends/src/reducers.js",
-		"/D/My Documents/Dev/robofriends/src/actions.js",
 		"/D/My Documents/Dev/robofriends/src/ErrorBoundary.js",
 		"/D/My Documents/Dev/robofriends/node_modules/redux-thunk/src/index.js",
 		"/D/My Documents/Dev/robofriends/src/App.js",
@@ -165,12 +231,10 @@
 		"/D/My Documents/Dev/robofriends/src/CardList.js",
 		"/D/My Documents/Dev/robofriends/src/SearchBox.js",
 		"/D/My Documents/Dev/robofriends/src/Scroll.js",
-		"/D/My Documents/Dev/robofriends/public/index.html",
 		"/D/My Documents/Dev/robofriends/src/index.css",
 		"/D/My Documents/Dev/style.css",
 		"/D/My Documents/Dev/robofriends/src/app.css",
 		"/D/My Documents/Dev/index.html",
-		"/D/My Documents/Dev/robofriends/package.json",
 		"/D/My Documents/Dev/robofriends/src/Hello.css",
 		"/D/My Documents/Dev/robofriends/src/Hello.js",
 		"/D/My Documents/Dev/DOM/index.html",
@@ -186,7 +250,7 @@
 	],
 	"find":
 	{
-		"height": 40.8
+		"height": 22.0
 	},
 	"find_in_files":
 	{
@@ -200,6 +264,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"app",
+			"CardList"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -207,6 +273,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"CounterButton"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -217,14 +284,130 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/actions.test.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								797,
+								797
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/containers/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								744,
+								744
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/reducers.test.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								793,
+								793
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/actions.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								332,
+								332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -261,7 +444,7 @@
 	"project": "robofriends.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -299,7 +482,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 300.0,
+	"side_bar_width": 50.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

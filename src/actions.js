@@ -14,7 +14,7 @@ export const setSearchField = (text) => {
 }
 
 
-export const requestRobots = (dispatch) => {
+export const requestRobots = () => (dispatch) => {
 	dispatch({ type: REQUEST_ROBOTS_PENDING});
 	// fetch the users asynchronously from the remote API
 	// then return the 

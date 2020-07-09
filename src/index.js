@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider, connect } from 'react-redux';
+import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { createLogger } from 'redux-logger'; // logging middleware for redux
 import thunk from 'redux-thunk';
@@ -18,9 +18,10 @@ ReactDOM.render(
 	// Provider wraps the App and passes down the store to all components in the tree
 	<Provider store={store}>
 		<App />
-	</Provider>, document.getElementById('root'));
+	</Provider>, document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register(); //CLL now running the service worker!
