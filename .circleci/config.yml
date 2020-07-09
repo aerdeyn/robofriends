@@ -21,9 +21,9 @@ jobs:
     steps:
       - checkout
       - run: echo "Sally first try!"
-  workflows:
-    version: 2.1
-    bobby_sally:
-      jobs:
-        - bobby
-        - sally
+workflows:
+  version: 2.1
+  bobby_sally:
+    jobs:
+      - bobby
+      - sally
