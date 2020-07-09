@@ -32,8 +32,8 @@ workflows:
   build_test_lint:
     jobs:
       - build
-      - hi there
+      - hithere
       - test:
-        requires:
-          - hi there
+          requires:
+            - hithere
 # hi there must have passed
