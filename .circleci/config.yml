@@ -24,10 +24,7 @@ jobs:
       - checkout
       - run: echo "testing stuff"
       - run: npm install
-      - run: npm test
-      - run:
-        name: "Run Jest and Collect Coverage Reports"
-        command: jest --collectCoverage=true
+      - run: npm testcoverage
       - store_artifacts:
           path: coverage
   hithere:
