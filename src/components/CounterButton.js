@@ -12,7 +12,7 @@ class CounterButton extends Component {
 		// controls whether the component updates or not
 		if (this.state.count !== nextState.count) {
 			// only updates if the state changes
-			return true;
+						return true;
 		}
 		return false;
 	}
