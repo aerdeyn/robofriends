@@ -55,6 +55,7 @@ describe('requestRobots', () => {
 		expect(reducers.requestRobots(initialStateRobots, {
 			type: REQUEST_ROBOTS_PENDING,	
 		})).toEqual({
+			error: '',
 			robots: [],
 			isPending: true
 		})
@@ -69,11 +70,12 @@ describe('requestRobots', () => {
 				email: 'john@gmail.com'
 			}
 		})).toEqual({
-			robots: [{
+			error: '',
+			robots: {
 				id: 3,
 				name: 'John',
 				email: 'john@gmail.com'
-			}],
+			},
 			isPending: false
 		})
 	})

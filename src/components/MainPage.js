@@ -30,7 +30,7 @@ class MainPage extends Component {
 
 	render () {
 		// const { robots } = this.state;
-		const { onSearchChange, robots, isPending } = this.props;
+		const { onSearchChange, isPending } = this.props;
 		
 		// const filteredRobots = this.state.robots.filter(robot => {
 		//	return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
