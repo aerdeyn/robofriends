@@ -24,7 +24,9 @@ jobs:
       - checkout
       - run: echo "testing stuff"
       - run: npm install
-      - run: npm test
+      - run: npm run testcoverage
+      - store_artifacts:
+          path: coverage
   hithere:
     docker:
       - image: circleci/node:11.1
