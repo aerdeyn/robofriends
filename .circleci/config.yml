@@ -24,7 +24,7 @@ jobs:
       - checkout
       - run: echo "testing stuff"
       - run: npm install
-      - run: npm testcoverage
+      - run: npm run testcoverage
       - store_artifacts:
           path: coverage
   hithere:
