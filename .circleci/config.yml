@@ -25,6 +25,11 @@ jobs:
       - run: echo "testing stuff"
       - run: npm install
       - run: npm test
+      - run:
+        name: "Run Jest and Collect Coverage Reports"
+        command: jest --collectCoverage=true
+      - store_artifacts:
+          path: coverage
   hithere:
     docker:
       - image: circleci/node:11.1
