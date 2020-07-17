@@ -69,13 +69,13 @@ describe('requestRobots', () => {
 				email: 'john@gmail.com'
 			}
 		})).toEqual({
-			error: ''
+			error: '',
 			robots: [{
 				id: 3,
 				name: 'John',
 				email: 'john@gmail.com'
 			}],
-			isPending: false,
+			isPending: false
 		})
 	})
 

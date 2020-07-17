@@ -4,7 +4,7 @@ class CounterButton extends Component {
 	constructor(){
 		super();
 		this.state = {
-			count: 5
+			count: 0
 		}
 	}
 	
